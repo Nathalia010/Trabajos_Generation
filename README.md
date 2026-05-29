@@ -1,2 +1,2 @@
-# Grupo-2
-Cuestionario Git 
+# Trabajos Generation
+# Karen Martinez
