@@ -44,7 +44,14 @@ class Serie extends Contenido {
             return this.episodiosPorTemporada = cantidad;
         }
         this.totalEpisodios = function() {
-
+            return this.episodiosPorTemporada * temporadas;
+        }
+        this.ficha = function() {
+             return `${this.titulo} (${this.anio}) 
+             - Genero: ${this.genero}
+             - Temporadas: ${temporadas}
+             - Episodios por temporada: ${this.episodiosPorTemporada}`;
+            
         }
 }
 }
