@@ -40,16 +40,18 @@ class Serie extends Contenido {
     episodiosPorTemporada = 0;
     constructor(titulo, genero, anio, temporadas) {
         super(titulo, genero, anio);
+        this.temporadas = temporadas;
+
         this.registrarEpisodios = function(cantidad) {
             return this.episodiosPorTemporada = cantidad;
         }
         this.totalEpisodios = function() {
-            return this.episodiosPorTemporada * temporadas;
+            return this.episodiosPorTemporada * this.temporadas;
         }
         this.ficha = function() {
              return `${this.titulo} (${this.anio}) 
              - Genero: ${this.genero}
-             - Temporadas: ${temporadas}
+             - Temporadas: ${this.temporadas}
              - Episodios por temporada: ${this.episodiosPorTemporada}`;
             
         }
