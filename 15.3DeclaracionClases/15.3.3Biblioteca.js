@@ -55,3 +55,22 @@ class Serie extends Contenido {
         }
 }
 }
+// catalago 
+let catalogo = [];
+const pelicula1 = new Pelicula("Inception", "Ciencia ficción", 2010, 148);
+const pelicula2 = new Pelicula("The Godfather", "Crimen", 1972, 175);
+const pelicula3 = new Pelicula("The Shawshank Redemption", "Drama", 1994, 142);
+
+const serie1 = new Serie("Stranger Things", "Ciencia ficción", 2016, 4);
+const serie2 = new Serie("Game of Thrones", "Fantasía", 2011, 8);
+const serie3 = new Serie("Breaking Bad", "Crimen", 2008, 5);
+
+catalogo.push(pelicula1, pelicula2, pelicula3, serie1, serie2, serie3);
+
+
+for (let contenido of catalogo) {
+    console.log(contenido.ficha());
+    console.log(contenido.estado());
+    console.log("------------------------------");
+}
+
